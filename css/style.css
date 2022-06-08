@@ -157,3 +157,9 @@ img {vertical-align: middle;}
     text-align: center;
     background-color: #f1f1f1;
   }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(231, 191, 172);
+    color: white;
+  }
