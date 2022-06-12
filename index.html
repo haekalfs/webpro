@@ -4,47 +4,144 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Haekal, Nada, Fariz, Andhika">
+
     <title>Dory Florist</title>
-    <link rel="stylesheet" href="css/style.css" >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logo01.png" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
+
+  <!----Body Part-->
   <body>
+
+    <!---Navbar-->
     <ul>
-      <li><img src="assets/logo01.png" width="50" height="45"/></li>
-      <li><a href="#home">Home</a></li>
+      <li><img src="assets/logo01.png" width="50px" height="50px"/></li>
+      <li><a href="index.html">&#127968; Home</a></li>
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Order</a>
+        <a href="javascript:void(0)" class="dropbtn">&#128188; Order</a>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="https://katalogproduk.co.id/nadarahmawati_">Shopee</a>
+          <a href="#">Lazada</a>
+          <a href="#">Tokopedia</a>
         </div>
       </li>
-      <li><a href="#news">About Us</a></li>
+      <li><a href="#aboutUs">&#128106; About Us</a></li>
+      <li style="float: right;"><a href="#Catalog">&#x1F4CB;Catalog</a></li>
     </ul>
-    <div class="slideshow-container">
+    <!---End of Navbar-->
 
-      <div class="mySlides fade">
-        <img src="assets/1.png" width="1920px" height="720px">
-      </div>
+    <!-----Slide Show-->
+    <div class="slideshow-container fade">
+
+        <!-- Foto Slideshow -->
+        <div class="Containers">
+            <section class="about">
+                <div class="main">
+                    <div class="about-text">
+                        <h2 style="font-family: 'Montserrat';">Bouquet & Flowers Expertise</h2>
+                        <p style="font-family: 'Montserrat';">A good life is a collection of happy moments. Let’s create your happy moments with us.</p>
+                        <a class="button" href="#" title="Let's Go">Shop Now</a>
+                    </div>
+                    <img src="assets/logo02.png" style="border-radius: 20px;" data-tilt>
+                </div>
+            </section>
+        </div>
       
-      <div class="mySlides fade">
-        <img src="assets/2.png" width="1920px" height="720px">
-      </div>
+        <div class="Containers">
+            <section class="about">
+                <div class="main">
+                    <img src="assets/Lipses Carnol.jpg" style="border-radius: 20px;" data-tilt>
+                    <div class="about-text">
+                        <h2 style="font-family: 'Montserrat';">Lipses Carnol</h2>
+                        <p style="font-family: 'Montserrat';">Dory Florist is a flower house located in Jakarta, 
+                            dory florist is a florist with a determination to be an impactful centered platform, especially in the florist industry. We provide various types of flower arrangements. with more than hundreds of bouquet, flower box and gift options to choose from. customer satisfaction is our priority, we are determined to provide a platform to solve it.
+                            From time to time, we are successful in providing customer satisfaction in the flower industry.</p>
+                        <a class="button" href="#">Buy Now</a>
+                    </div>
+                </div>
+            </section>
+        </div>
       
-      <div class="mySlides fade">
-        <img src="assets/3.png" width="1920px" height="720px">
-      </div>
+        <div class="Containers">
+            <section class="about">
+                <div class="main">
+                    <img src="assets/Dacres Queence.jpg" style="border-radius: 20px;" data-tilt>
+                    <div class="about-text">
+                        <h2 style="font-family: 'Montserrat';">Dacres Queence</h2>
+                        <p style="font-family: 'Montserrat';">Dory Florist is a flower house located in Jakarta, 
+                            dory florist is a florist with a determination to be an impactful centered platform, especially in the florist industry. We provide various types of flower arrangements. with more than hundreds of bouquet, flower box and gift options to choose from. customer satisfaction is our priority, we are determined to provide a platform to solve it.
+                            From time to time, we are successful in providing customer satisfaction in the flower industry.</p>
+                        <a class="button" href="#">Buy Now</a>
+                    </div>
+                </div>
+            </section>
+        </div>
       
+        <!-- Skideshow buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+      </div>
+
+  <!-----Cardview-->
+    <section>
+        <div class="title" id="Catalog">
+            <p><a style="font-size: 25px;">&#127893; Artificial Flowers</a></p>
+            <div class="line">
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="column" >
+            <div class="card">
+                <img src="assets/Dases Flabys.jpg" width="330px" height="400px" style="border-radius: 50%;" data-tilt>
+                <h3>Gases Forast</h3>
+                <p>Rp 2.300.000</p>
+                <a class="button" title="Promo Bang!" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="assets/Dacres Queence.jpg" width="330px" height="400px" style="border-radius: 50%;" data-tilt>
+                <h3>Dacres Queence</h3>
+                <p>Rp 1.600.000</p>
+                <a class="button" title="Promo Bang!" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="assets/Dases Bathorch.jpg" width="330px" height="400px" style="border-radius: 50%;" data-tilt>
+                <h3>Dases Bathroch</h3>
+                <p>Rp 2.800.000</p>
+                <a class="button" title="Promo Bang!" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="assets/Flases Fevway.jpg" width="330px" height="400px" style="border-radius: 50%;" data-tilt>
+                <h3>Dases Flabys</h3>
+                <p>Rp 1.900.000</p>
+                <a class="button" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
+            </div>
+        </div>
     </div>
-      <br>
-    <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-    </div>
+    <div class="container-button"><a class="button-primari" href="https://katalogproduk.co.id/nadarahmawati_">View More Artificial Products</a></div>
+    
+
     <section>
         <div class="title">
-            <h1>NEW</h1>
+            <p><a style="font-size: 25px;">&#127893; Fresh Flowers</a></p>
             <div class="line">
             </div>
         </div>
@@ -53,93 +150,89 @@
     <div class="row">
         <div class="column">
             <div class="card">
-                <img src="assets/Dases Flabys.jpg" width="330px" height="400px">
+                <img src="assets/Gases Forast.jpg" width="330px" height="400px" style="border-radius: 10%;" data-tilt>
                 <h3>Gases Forast</h3>
                 <p>Rp 2.000.000</p>
+                <a class="button" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="assets/Dacres Queence.jpg" width="330px" height="400px">
+                <img src="assets/Gechid Dases.jpg" width="330px" height="400px" style="border-radius: 10%;" data-tilt>
                 <h3>Dacres Queence</h3>
-                <p>Rp 2.000.000</p>
+                <p>Rp 2.250.000</p>
+                <a class="button" title="Promo Bang!" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="assets/Dases Bathorch.jpg" width="330px" height="400px">
+                <img src="assets/Hyflax Peony.jpg" width="330px" height="400px" style="border-radius: 10%;" data-tilt>
                 <h3>Dases Bathroch</h3>
-                <p>Rp 2.000.000</p>
+                <p>Rp 1.000.000</p>
+                <a class="button" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="assets/Flases Fevway.jpg" width="330px" height="400px">
+                <img src="assets/Lipses Carnol.jpg" width="330px" height="400px" style="border-radius: 10%;" data-tilt>
                 <h3>Dases Flabys</h3>
-                <p>Rp 2.000.000</p>
+                <p>Rp 1.999.000</p>
+                <a class="button" href="https://katalogproduk.co.id/nadarahmawati_">Order</a>
             </div>
         </div>
     </div>
+    <div class="container-button"><a class="button-primari" href="https://katalogproduk.co.id/nadarahmawati_">View More Artificial Products</a></div>
 
-    <section>
-        <div class="title">
-            <h1>FRESH FLOWER</h1>
-            <div class="line">
-            </div>
-        </div>
-    </section>
-
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="assets/Gases Forast.jpg" width="330px" height="400px">
-                <h3>Gases Forast</h3>
-                <p>Rp 2.000.000</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="assets/Gechid Dases.jpg" width="330px" height="400px">
-                <h3>Dacres Queence</h3>
-                <p>Rp 2.000.000</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="assets/Hyflax Peony.jpg" width="330px" height="400px">
-                <h3>Dases Bathroch</h3>
-                <p>Rp 2.000.000</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="assets/Lipses Carnol.jpg" width="330px" height="400px">
-                <h3>Dases Flabys</h3>
-                <p>Rp 2.000.000</p>
-            </div>
-        </div>
-    </div>
-
-    <section class="about">
+    <section class="about" id="aboutUs">
         <div class="main">
-            <img src="assets/peoses cornpop.jpg">
+            <img src="assets/logo02.png" style="border-radius: 20px;" data-tilt>
             <div class="about-text">
-                <h2>PEOSES CORNPOP</h2>
-                <p>La Madame Florist is a flower house located in North Jakarta, Pantai Indah Kapuk. We've been serving you since 2013 and it feels amazing to be a "Messenger" to our beloved customers for the past years. Professionally curated by a local expert La Madame Florist, with more than hundreds of bouquet, flower box, flower basket and gift options to choose from, whatever may be the occasion: season’s greeting, anniversary, graduation wishes, birthday, valentines, wedding, engagement, newborn, Christmas, Eid Mubarak and many more categories that cover the entire canvas of life.</p>
+                <h2 style="font-family: 'Montserrat';">Dory Florist</h2>
+                <p style="font-family: 'Montserrat';">Dory Florist is a flower house located in Jakarta, 
+                    dory florist is a florist with a determination to be an impactful centered platform, especially in the florist industry. We provide various types of flower arrangements. with more than hundreds of bouquet, flower box and gift options to choose from. customer satisfaction is our priority, we are determined to provide a platform to solve it.
+                    From time to time, we are successful in providing customer satisfaction in the flower industry.</p>
             </div>
         </div>
     </section>
+
+    <!--Bagian bawah-->
+    <div>
+        <div class="adjuster">
+            <div class="pageDown">
+                <div class="futer">
+                    <img src="assets/logo01.png" width="170px" height="170px" data-tilt>
+                </div>
+                <div class="futer">
+                    <p>Sudirman Central Busines District Lot 9 JRT.5Jl. Jenderal Sudirman No.Kav.52-53, RT.5/RW.3, </p>
+                    <p><a style="font-size: 12px;">Senayan, Jakarta, Indonesia</a></p>
+                </div>
+                <div class="futer">
+                    <p>Email : Nada@doryflorist.com</p>
+                    <p>Phone : +62 (21) 50101260</p>
+                </div>
+                <div>
+                    <p>
+                        <a href="https://instagram.com/nadarhm_"><img class="imgFuter" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="50px" height="50px" data-tilt></a>
+                        <a href="https://www.linkedin.com/in/haekal-sastradilaga-62b820178/"><img class="imgFuter" src="https://cdn-icons-png.flaticon.com/512/25/25320.png" width="50px" height="50px" data-tilt></a>
+                        <a href="#"><img class="imgFuter" src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" width="50px" height="50px" data-tilt></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
-  <br>
+
+  <!----Footer-->
   <footer>
-    <p>Dory Florist<br>
-      <a href="mailto:hege@example.com">hege@example.com</a></p>
+    <div class="footer">
+        <p style="font-size: 10px;">© Copyright to Beloved Dory 2022</p>
+    </div>
   </footer>
+
+  <!----Javascript-->
   <script src="js/script.js"></script>
+  <script src="js/vanilla-tilt.min.js"></script>
 </html>

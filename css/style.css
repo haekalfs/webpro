@@ -1,17 +1,33 @@
+/* Haekal, Dhika */
 body {
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     margin:0px;
   }
-  ul {
+
+.logo{
+    justify-content: center;
+    display: grid;  
+}
+
+.pojok{
+    float: right;   
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(231, 191, 172);
+    font-family: Poppins;
   }
-  
-  li {
+
+li {
     float: left;
+}
+
+p{
+    font-family: Poppins;
 }
 
 li a,
@@ -25,7 +41,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(0, 92, 197);
+    background-color: rgb(223, 166, 140);
 }
 
 li.dropdown {
@@ -61,175 +77,79 @@ li.dropdown {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Verdana, sans-serif;
-}
-
-.mySlides {
-    display: none;
-}
-
 img {
     vertical-align: middle;
-}
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: 0;
-}
-
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
     text-align: center;
+    max-width: 100%;
+    height: auto;
 }
 
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
+/* fariz */
 
 section {
     width: 80%;
     margin: 60px auto;
 }
-
 section h1{
   padding: 10px;
   text-shadow: 3px 2px 1px grey;
   font-size: 40px
 }
-
 .title {
     text-align: center;
     font-size: 2vmin;
-    font-family: f25 bank printer;
+    font-family: Poppins;
 }
-
 .card h3 {
   font-family: bebaskai;
   font-size: px;
 }
-
 .card p {
   font-family: f25 bank printer;
 }
-
 .about {
   width: 100%;
   padding: 100px 0px;
 }
-
 .about img {
   height: auto;
   width: 400px;
 }
-
 .about-text {
   width: 550px;
 }
-
 .main {
   width: 1130px;
+  height: 200px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
- 
-/* Fading animation */
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
-/* On smaller screens, decrease text size */
-
 @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px
     }
 }
-
 * {
     box-sizing: border-box;
 }
-
-
-/* Float four columns side by side */
-
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
 }
-
-
-/* Remove extra left and right margins, due to padding */
-
 .row {
     margin: 0 -5px;
 }
-
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* Responsive columns */
-
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -237,19 +157,174 @@ section h1{
         margin-bottom: 20px;
     }
 }
-
-
-/* Style the counter cards */
-
+@media screen and (max-width: 991.98px) {
+    .adjuster {
+        width: 90%;
+    }
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
-}
-  footer {
-    text-align: center;
-    padding: 3px;
     background-color: rgb(231, 191, 172);
-    color: white;
-  }
+    border-radius: 10px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Haekal */
+
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+.Containers {
+  display: none;
+}
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+a.button:hover {
+    background: rgb(214, 136, 99);
+    text-decoration: none;
+}
+a.button-primari:hover {
+    background: rgb(214, 136, 99);
+    text-decoration: none;
+}
+.enable, .dots:hover {
+  background-color: #716170;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/* Nada */
+
+.button { 
+    background-color: rgb(224, 171, 146);
+    border: none; 
+    color: white; 
+    padding: 9px 15px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
+    border-radius: 8px;
+   } 
+.container-button {  
+    max-width: 1920px;
+    padding-top: 30px;
+    display: grid;  
+    }  
+.button-primari {
+    padding: 9px 15px; 
+    background-color: rgb(231, 191, 172);
+    color: white; 
+    border-radius: 8px;
+    font-size: 15px;  
+    margin: auto;  
+    } 
+   
+.footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/* Unused
+.footer-dory{
+    padding:50px 0px 50px 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.futerColor{
+    align-items: center;
+    margin: 0px;
+    height: 50px;
+    color: #717161;
+    background: #e3e3e3;
+    padding: 5px;
+}*/
+.imgFuter{
+    display: inline-block;
+    margin: 25px 10px;
+}
+.pageDown {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: rgb(231, 191, 172);
+}
+
+.futer {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.warna{
+    background-color: #717161;
+}
+
+  
