@@ -10,7 +10,7 @@ body {
 }
 
 .pojok{
-    float: right;   
+    float: right;
 }
 
 ul {
@@ -288,23 +288,6 @@ a.button-primari:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
-/* Unused
-.footer-dory{
-    padding:50px 0px 50px 0px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-.futerColor{
-    align-items: center;
-    margin: 0px;
-    height: 50px;
-    color: #717161;
-    background: #e3e3e3;
-    padding: 5px;
-}*/
 .imgFuter{
     display: inline-block;
     margin: 25px 10px;
